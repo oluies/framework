@@ -143,7 +143,7 @@ async function renderSidebar(options: RenderOptions, {resolveImport, resolveLink
 <label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
 <nav id="observablehq-sidebar">
   <ol>
-    <li class="observablehq-sidebar-close-item" role="presentation"><label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label></li>
+    <li class="observablehq-sidebar-close-item" aria-hidden="true"><label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label></li>
     <li class="observablehq-link${
       normalizePath(path) === "/index" ? " observablehq-link-active" : ""
     }"><a href="${encodeURI(resolveLink("/"))}">${html.unsafe(home)}</a></li>
